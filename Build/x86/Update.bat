@@ -292,6 +292,32 @@ del C:\Build\x86\mount\install\Windows\Setup\Scripts\User.reg
 Dism /Unmount-Wim /MountDir:C:\Build\x86\mount\install /Commit
 timeout 2
 
+:: Disable Components
+Dism /Mount-Wim /WimFile:C:\Build\x86\files\sources\install.wim /Index:1 /MountDir:C:\Build\x86\mount\install
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"Chess"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"FaxServicesClientPackage"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"FreeCell"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"Hearts"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"InboxGames"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"Internet Backgammon"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"Internet Checkers"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"Internet Games"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"Internet Spades"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"Minesweeper"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"More Games"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"MSRDC-Infrastructure"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"OpticalMediaDisc"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"Printing-XPSServices-Features"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"PurblePlace"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"Shanghai"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"Solitaire"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"SpiderSolitaire"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"TabletPCOC"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"WindowsGadgetPlatform"
+Dism /Image:C:\Build\x86\mount\install /Disable-Feature /FeatureName:"Xps-Foundation-Xps-Viewer"
+Dism /Unmount-Wim /MountDir:C:\Build\x86\mount\install /Commit
+timeout 2
+
 C:\Build\x64\tools\imagex.exe /COMPRESS maximum /EXPORT "C:\Build\x86\files\sources\install.wim" 1 "C:\Build\x86\files\sources\windows.wim" "Windows 7"
 C:\Build\x64\tools\imagex.exe /info "C:\Build\x86\files\sources\windows.wim" 1 "Windows 7" "Windows 7"
 del C:\Build\x86\files\sources\install.wim

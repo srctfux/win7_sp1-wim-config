@@ -1,5 +1,16 @@
 Windows Registry Editor Version 5.00
 
+[HKEY_USERS\BUILD\Console]
+"InsertMode"=dword:00000001
+"QuickEdit"=dword:00000001
+"ScreenBufferSize"=dword:003200a0
+"ScreenColors"=dword:0000000f
+"WindowSize"=dword:00190050
+
+[HKEY_USERS\BUILD\Control Panel\Mouse]
+"ActiveWindowTracking"=dword:00000001
+"MouseSensitivity"="12"
+
 [HKEY_USERS\BUILD\Software\Microsoft\CTF\LangBar]
 "ShowStatus"=dword:00000003
 "Transparency"=dword:000000ff
@@ -15,17 +26,86 @@ Windows Registry Editor Version 5.00
 "DiscontinueEOS"=dword:00000001
 
 [HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Hidden"=dword:00000001
 "IconsOnly"=dword:00000001
+"ShowSuperHidden"=dword:00000001
 "HideFileExt"=dword:00000000
+"AutoCheckSelect"=dword:00000001
 "DisablePreviewDesktop"=dword:00000001
+"Start_TrackProgs"=dword:00000000
+"Start_TrackDocs"=dword:00000000
+"Start_NotifyNewApps"=dword:00000000
+"Start_AdminToolsRoot"=dword:00000000
+"StartMenuAdminTools"=dword:00000000
 "EnableBalloonTips"=dword:00000000
 "DisallowShaking"=dword:00000001
+"Start_ShowHelp"=dword:00000000
+"Start_ShowUser"=dword:00000000
+"Start_ShowMyDocs"=dword:00000000
+"Start_ShowMyComputer"=dword:00000000
+"Start_ShowMyPics"=dword:00000000
+"Start_ShowMyGames"=dword:00000000
+"Start_ShowMyMusic"=dword:00000000
+"Start_ShowControlPanel"=dword:00000001
+"Start_ShowSetProgramAccessAndDefaults"=dword:00000000
+"Start_ShowDownloads"=dword:00000001
 
 [HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
 "DisableAutoplay"=dword:00000001
 
 [HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects]
 "VisualFXSetting"=dword:00000003
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\AnimateMinMax]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ComboBoxAnimation]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ControlAnimations]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\CursorShadow]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\DragFullWindows]
+"DefaultApplied"=dword:00000001
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\DropShadow]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\DWMAeroPeekEnabled]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ListBoxSmoothScrolling]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ListviewAlphaSelect]
+"DefaultApplied"=dword:00000001
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ListviewShadow]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\MenuAnimation]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\SelectionFade]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\TaskbarAnimations]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ThumbnailsOrIcon]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\TooltipAnimation]
+"DefaultApplied"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"SecureProtocols"=dword:00000a00
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad]
+"WpadOverride"=dword:00000001
 
 [HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Media Center]
 "EnableNotifications"=dword:00000000
@@ -40,4 +120,21 @@ Windows Registry Editor Version 5.00
 
 [HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Run]
 "Sidebar"=-
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\RunOnce]
+"TurnOffOPV"="reg add \"HKCU\\Software\\Microsoft\\Internet Explorer\\Feeds\" /v \"TurnOffOPV\" /t REG_DWORD /d \"1\" /f"
+"NoSyncStatus"="reg add \"HKCU\\Software\\Microsoft\\Feeds\" /v \"SyncStatus\" /t REG_DWORD /d \"0\" /f"
+"UserPreferencesMask"="reg add \"HKCU\\Control Panel\\Desktop\" /v \"UserPreferencesMask\" /t REG_BINARY /d \"9012018010000000\" /f"
+"ListviewShadow"="reg add \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" /v \"ListviewShadow\" /t REG_DWORD /d \"0\" /f"
+"TaskbarAnimations"="reg add \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\" /v \"TaskbarAnimations\" /t REG_DWORD /d \"0\" /f"
+"EnableAeroPeek"="reg add \"HKCU\\Software\\Microsoft\\Windows\\DWM\" /v \"EnableAeroPeek\" /t REG_DWORD /d \"0\" /f"
+"MinAnimate"="reg add \"HKCU\\Control Panel\\Desktop\\WindowMetrics\" /v \"MinAnimate\" /t REG_SZ /d \"0\" /f"
+"DelRecentPlaces"="cmd /c del \"%USERPROFILE%\\Links\\RecentPlaces.lnk\""
+"DelDownloadsDesktopIni"="cmd /c del /ah \"%USERPROFILE%\\Downloads\\desktop.ini\""
+"DelDesktopDesktopIni"="cmd /c del /ah \"%USERPROFILE%\\Desktop\\desktop.ini\""
+"DelMaintenance"="cmd /c rd /s /q \"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Maintenance\""
+
+; Theme
+[HKEY_USERS\BUILD\Software\Policies\Microsoft\Windows\Personalization]
+"ThemeFile"="C:\\Windows\\Resources\\Themes\\theme.theme"
 

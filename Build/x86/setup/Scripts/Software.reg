@@ -11,6 +11,12 @@ Windows Registry Editor Version 5.00
 "4"="216.239.35.12"
 "5"=-
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
+"SecureProtocols"=dword:00000a00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
+"DefaultSecureProtocols"=dword:00000a00
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Media Center\Service\BackgroundScanner]
 "PeriodicScanWakeupHour"=dword:00000003
 
@@ -61,6 +67,11 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
 "NoAutoplayfornonVolume"=dword:00000001
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+"DisableLocationScripting"=dword:00000001
+"DisableSensors"=dword:00000001
+"DisableLocation"=dword:00000001
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WDI\{9c5a40da-b965-4fc3-8781-88dd50a6299d}]
 "ScenarioExecutionEnabled"=dword:00000000
 
@@ -81,6 +92,13 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Mail]
 "ManualLaunchAllowed"=dword:00000000
+
+; UPnP
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient]
+"EnableMulticast"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
+"RegisterSpoolerRemoteRpcEndPoint"=dword:00000002
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore]
 "DisableSR"=dword:00000001

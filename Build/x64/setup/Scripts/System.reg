@@ -1,8 +1,86 @@
 Windows Registry Editor Version 5.00
 
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Power]
+"HibernateEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Power\User\PowerSchemes]
+"ActivePowerScheme"="8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c"
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Power\User\PowerSchemes\381b4222-f694-41f0-9685-ff5bb260df2e\0012ee47-9041-4b5d-9b77-535fba8b1442\6738e2c4-e8a5-4a42-b16a-e040e769756e]
+"ACSettingIndex"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Power\User\PowerSchemes\381b4222-f694-41f0-9685-ff5bb260df2e\238c9fa8-0aad-41ed-83f4-97be242c8f20\29f6c1db-86da-48c5-9fdb-f2b67b1f44da]
+"ACSettingIndex"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Power\User\PowerSchemes\381b4222-f694-41f0-9685-ff5bb260df2e\7516b95f-f776-4464-8c53-06167f40cc99\3c0bc021-c8a8-4e07-a973-6b14cbcb2b7e]
+"ACSettingIndex"=dword:00000708
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Power\User\PowerSchemes\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c\0012ee47-9041-4b5d-9b77-535fba8b1442\6738e2c4-e8a5-4a42-b16a-e040e769756e]
+"ACSettingIndex"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Power\User\PowerSchemes\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c\7516b95f-f776-4464-8c53-06167f40cc99\3c0bc021-c8a8-4e07-a973-6b14cbcb2b7e]
+"ACSettingIndex"=dword:00000708
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Power\User\PowerSchemes\8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583]
+"ACSettingIndex"=dword:00000064
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Power\User\PowerSchemes\a1841308-3541-4fab-bc81-f71556f20b4a\0012ee47-9041-4b5d-9b77-535fba8b1442\6738e2c4-e8a5-4a42-b16a-e040e769756e]
+"ACSettingIndex"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Power\User\PowerSchemes\a1841308-3541-4fab-bc81-f71556f20b4a\238c9fa8-0aad-41ed-83f4-97be242c8f20\29f6c1db-86da-48c5-9fdb-f2b67b1f44da]
+"ACSettingIndex"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Power\User\PowerSchemes\a1841308-3541-4fab-bc81-f71556f20b4a\7516b95f-f776-4464-8c53-06167f40cc99\3c0bc021-c8a8-4e07-a973-6b14cbcb2b7e]
+"ACSettingIndex"=dword:00000708
+
 [HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Remote Assistance]
 "fAllowToGetHelp"=dword:00000000
 "fAllowFullControl"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client]
+"DisabledByDefault"=dword:00000001
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server]
+"DisabledByDefault"=dword:00000001
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client]
+"DisabledByDefault"=dword:00000001
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server]
+"DisabledByDefault"=dword:00000001
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client]
+"DisabledByDefault"=dword:00000001
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server]
+"DisabledByDefault"=dword:00000001
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client]
+"DisabledByDefault"=dword:00000000
+"Enabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server]
+"DisabledByDefault"=dword:00000001
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client]
+"DisabledByDefault"=dword:00000000
+"Enabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server]
+"DisabledByDefault"=dword:00000000
+"Enabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Session Manager\Memory Management]
+"PagingFiles"=hex(7):43,00,3a,00,5c,00,70,00,61,00,67,00,65,00,66,00,69,00,6c,\
+  00,65,00,2e,00,73,00,79,00,73,00,20,00,34,00,30,00,39,00,36,00,20,00,34,00,\
+  30,00,39,00,36,00,00,00,00,00
 
 [HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\Terminal Server]
 "fAllowToGetHelp"=dword:00000000
@@ -16,6 +94,21 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Control\WMI\Autologger\WdiContextLog]
 "Start"=dword:00000000
+
+; IPv6
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\services\Dnscache\Parameters]
+"AddrConfigControl"=dword:00000000
+
+; IPv6
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\services\iphlpsvc\config]
+"Enable6to4"=dword:00000003
+"IsatapState"=dword:00000003
+
+; IPv6
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\services\iphlpsvc\Teredo]
+"ServerName"="win10.ipv6.microsoft.com"
+"RefreshInterval"=dword:00000258
+"Type"=dword:00000006
 
 [HKEY_LOCAL_MACHINE\BUILD\ControlSet001\services\LanmanServer\Parameters]
 "SMB1"=dword:00000000
@@ -39,8 +132,14 @@ Windows Registry Editor Version 5.00
 "RemoteAssistance-SSDPSrv-In-UDP-Active"="v2.10|Action=Allow|Active=FALSE|Dir=In|Protocol=17|Profile=Domain|Profile=Private|LPort=1900|RA4=LocalSubnet|RA6=LocalSubnet|App=%SystemRoot%\\system32\\svchost.exe|Svc=Ssdpsrv|Name=@FirewallAPI.dll,-33019|Desc=@FirewallAPI.dll,-33022|EmbedCtxt=@FirewallAPI.dll,-33002|"
 "RemoteAssistance-SSDPSrv-Out-UDP-Active"="v2.10|Action=Allow|Active=FALSE|Dir=Out|Protocol=17|Profile=Domain|Profile=Private|RPort=1900|RA4=LocalSubnet|RA6=LocalSubnet|App=%SystemRoot%\\system32\\svchost.exe|Svc=Ssdpsrv|Name=@FirewallAPI.dll,-33023|Desc=@FirewallAPI.dll,-33026|EmbedCtxt=@FirewallAPI.dll,-33002|"
 
+; UPnP
 [HKEY_LOCAL_MACHINE\BUILD\ControlSet001\services\Tcpip\Parameters]
 "EnableICMPRedirect"=dword:00000000
+"IGMPLevel"=dword:00000000
+
+; IPv6
+[HKEY_LOCAL_MACHINE\BUILD\ControlSet001\services\TCPIP6\Parameters]
+"DisabledComponents"=dword:000000ff
 
 [HKEY_LOCAL_MACHINE\BUILD\ControlSet001\Services\W32Time\Parameters]
 "NtpServer"="216.239.35.0,0x9"
