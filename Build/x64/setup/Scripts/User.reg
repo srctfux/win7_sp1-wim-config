@@ -1,0 +1,43 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_USERS\BUILD\Software\Microsoft\CTF\LangBar]
+"ShowStatus"=dword:00000003
+"Transparency"=dword:000000ff
+"Label"=dword:00000001
+"ExtraIconsOnMinimized"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\CTF\MSUTB]
+"Left"=dword:00000624
+"Top"=dword:00000000
+"DontShowCloseLangBarDlg"=dword:00000001
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\EOSNotify]
+"DiscontinueEOS"=dword:00000001
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"IconsOnly"=dword:00000001
+"HideFileExt"=dword:00000000
+"DisablePreviewDesktop"=dword:00000001
+"EnableBalloonTips"=dword:00000000
+"DisallowShaking"=dword:00000001
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
+"DisableAutoplay"=dword:00000001
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects]
+"VisualFXSetting"=dword:00000003
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Media Center]
+"EnableNotifications"=dword:00000000
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Media Center\Settings\MCE.PerUserSettings]
+"enableAnimations"=dword:00000000
+"enableStartupAnimation"=dword:00000000
+"enableStartupSound"=dword:00000000
+"fGadgetAddPrompted"=dword:00000001
+"soundEffectsEnabled"=dword:00000000
+"SqmVisualSettings"="4"
+
+[HKEY_USERS\BUILD\Software\Microsoft\Windows\CurrentVersion\Run]
+"Sidebar"=-
+
